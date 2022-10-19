@@ -1,12 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace CalculatorApp_Console
+namespace CalcApp
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Enter the expression");
+            string expression = Console.ReadLine();
+            
+            Console.WriteLine("Your result: "+IController.Contr(expression));
         }
     }
 }
